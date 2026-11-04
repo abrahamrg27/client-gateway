@@ -1,10 +1,8 @@
-
-
 export enum OrderStatus {
-  PENDING = "PENDING",
-  PROCESING = "PROCESING",
-  DELIVERED = "DELIVERED",
-  CANCELED = "CANCELED",
+  PENDING = 'PENDING',
+  PROCESING = 'PROCESING',
+  DELIVERED = 'DELIVERED',
+  CANCELED = 'CANCELED',
 }
 
 export const OrderStatusList = [

@@ -6,18 +6,18 @@ import { ORDERS_SERVICE } from '../config/service.js';
 import { envs } from '../config/envs.js';
 
 @Module({
-   imports: [
-      ClientsModule.register([
-        {
-          name: ORDERS_SERVICE,
-          transport: Transport.TCP,
-          options: {
-            host: envs.ordersMicroserviceHost,
-            port: envs.ordersMicroservicePort,
-          },
+  imports: [
+    ClientsModule.register([
+      {
+        name: ORDERS_SERVICE,
+        transport: Transport.TCP,
+        options: {
+          host: envs.ordersMicroserviceHost,
+          port: envs.ordersMicroservicePort,
         },
-      ]),
-    ],
+      },
+    ]),
+  ],
   controllers: [OrdersController],
   providers: [OrdersService],
 })
